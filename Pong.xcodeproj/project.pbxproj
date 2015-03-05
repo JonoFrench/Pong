@@ -14,6 +14,11 @@
 		34EE7F871AA4C8C900F0F1DE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34EE7F861AA4C8C900F0F1DE /* Images.xcassets */; };
 		34EE7F8A1AA4C8C900F0F1DE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34EE7F881AA4C8C900F0F1DE /* LaunchScreen.xib */; };
 		34EE7F961AA4C8C900F0F1DE /* PongTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EE7F951AA4C8C900F0F1DE /* PongTests.m */; };
+		34EE7FA11AA4C98500F0F1DE /* PongViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EE7FA01AA4C98500F0F1DE /* PongViewController.m */; };
+		34EE7FA31AA4D89A00F0F1DE /* Pong_beep.wav in Resources */ = {isa = PBXBuildFile; fileRef = 34EE7FA21AA4D89A00F0F1DE /* Pong_beep.wav */; };
+		34EE7FA51AA4D8A400F0F1DE /* Pong_boop.wav in Resources */ = {isa = PBXBuildFile; fileRef = 34EE7FA41AA4D8A400F0F1DE /* Pong_boop.wav */; };
+		34EE7FA71AA4D93600F0F1DE /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34EE7FA61AA4D93600F0F1DE /* AudioToolbox.framework */; };
+		34EE7FA91AA4DA4500F0F1DE /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34EE7FA81AA4DA4500F0F1DE /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +45,12 @@
 		34EE7F8F1AA4C8C900F0F1DE /* PongTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PongTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		34EE7F941AA4C8C900F0F1DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34EE7F951AA4C8C900F0F1DE /* PongTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PongTests.m; sourceTree = "<group>"; };
+		34EE7F9F1AA4C98500F0F1DE /* PongViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PongViewController.h; sourceTree = "<group>"; };
+		34EE7FA01AA4C98500F0F1DE /* PongViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PongViewController.m; sourceTree = "<group>"; };
+		34EE7FA21AA4D89A00F0F1DE /* Pong_beep.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Pong_beep.wav; sourceTree = "<group>"; };
+		34EE7FA41AA4D8A400F0F1DE /* Pong_boop.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Pong_boop.wav; sourceTree = "<group>"; };
+		34EE7FA61AA4D93600F0F1DE /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		34EE7FA81AA4DA4500F0F1DE /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +58,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34EE7FA91AA4DA4500F0F1DE /* AVFoundation.framework in Frameworks */,
+				34EE7FA71AA4D93600F0F1DE /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,8 @@
 		34EE7F6D1AA4C8C900F0F1DE = {
 			isa = PBXGroup;
 			children = (
+				34EE7FA81AA4DA4500F0F1DE /* AVFoundation.framework */,
+				34EE7FA61AA4D93600F0F1DE /* AudioToolbox.framework */,
 				34EE7F781AA4C8C900F0F1DE /* Pong */,
 				34EE7F921AA4C8C900F0F1DE /* PongTests */,
 				34EE7F771AA4C8C900F0F1DE /* Products */,
@@ -89,6 +104,10 @@
 				34EE7F861AA4C8C900F0F1DE /* Images.xcassets */,
 				34EE7F881AA4C8C900F0F1DE /* LaunchScreen.xib */,
 				34EE7F791AA4C8C900F0F1DE /* Supporting Files */,
+				34EE7F9F1AA4C98500F0F1DE /* PongViewController.h */,
+				34EE7FA01AA4C98500F0F1DE /* PongViewController.m */,
+				34EE7FA21AA4D89A00F0F1DE /* Pong_beep.wav */,
+				34EE7FA41AA4D8A400F0F1DE /* Pong_boop.wav */,
 			);
 			path = Pong;
 			sourceTree = "<group>";
@@ -199,7 +218,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34EE7FA31AA4D89A00F0F1DE /* Pong_beep.wav in Resources */,
 				34EE7F851AA4C8C900F0F1DE /* Main.storyboard in Resources */,
+				34EE7FA51AA4D8A400F0F1DE /* Pong_boop.wav in Resources */,
 				34EE7F8A1AA4C8C900F0F1DE /* LaunchScreen.xib in Resources */,
 				34EE7F871AA4C8C900F0F1DE /* Images.xcassets in Resources */,
 			);
@@ -221,6 +242,7 @@
 			files = (
 				34EE7F821AA4C8C900F0F1DE /* ViewController.m in Sources */,
 				34EE7F7F1AA4C8C900F0F1DE /* AppDelegate.m in Sources */,
+				34EE7FA11AA4C98500F0F1DE /* PongViewController.m in Sources */,
 				34EE7F7C1AA4C8C900F0F1DE /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,6 +436,7 @@
 				34EE7F9B1AA4C8C900F0F1DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		34EE7F9C1AA4C8C900F0F1DE /* Build configuration list for PBXNativeTarget "PongTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +445,7 @@
 				34EE7F9E1AA4C8C900F0F1DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
