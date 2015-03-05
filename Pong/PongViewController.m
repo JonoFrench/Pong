@@ -176,7 +176,6 @@ int ballSpeed;
     if (ballRect.origin.y >= (self.view.frame.size.height - ballSize))
     {
         ballRect.origin.y = self.view.frame.size.height - ballSize;
-        NSLog(@"bottom wall");
         if (ballSpeed > _initialBallSpeed) {
             ballSpeed--;
         }
@@ -198,7 +197,6 @@ int ballSpeed;
     else if (ballRect.origin.y <= self.view.frame.origin.y)
     {
         ballRect.origin.y = self.view.frame.origin.y;
-        NSLog(@"top wall");
         if (ballSpeed > _initialBallSpeed) {
             ballSpeed--;
         }
@@ -220,7 +218,6 @@ int ballSpeed;
     //check for hitting left wall
     else if (ballRect.origin.x >= (self.view.frame.size.width-ballSize))
     {
-        NSLog(@"left wall");
         ballRect.origin.x = self.view.frame.size.width- ballSize;
         xSpeed = -ballSpeed;
         if(self.soundOn)
@@ -231,8 +228,6 @@ int ballSpeed;
     //check for hitting right wall
     else if (ballRect.origin.x <= self.view.frame.origin.x)
     {
-        NSLog(@"right wall");
-
         ballRect.origin.x = self.view.frame.origin.x;
         xSpeed = ballSpeed;
         if(self.soundOn)
@@ -348,7 +343,6 @@ int ballSpeed;
     {
         leftMove = 0;
     }
-    
 }
 
 -(void)pressLeftUp:(UILongPressGestureRecognizer *)gestureRecognizer
@@ -362,7 +356,6 @@ int ballSpeed;
         
         leftMove = 0;
     }
-    
 }
 
 -(BOOL)prefersStatusBarHidden

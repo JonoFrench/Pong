@@ -11,7 +11,6 @@
 #import <AVFoundation/AVFoundation.h>
 @interface PongViewController : UIViewController<UIGestureRecognizerDelegate>
 
-
 @property (nonatomic,strong) UIView* ball;
 @property (nonatomic,strong) UIView* rightBat;
 @property (nonatomic,strong) UIView* leftBat;
