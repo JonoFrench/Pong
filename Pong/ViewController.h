@@ -22,6 +22,5 @@
 @property (weak, nonatomic) IBOutlet UILabel *lblSpeed;
 @property (weak, nonatomic) IBOutlet UILabel *lblSound;
 
-
 @end
 

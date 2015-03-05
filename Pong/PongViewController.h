@@ -26,6 +26,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *lblRightScore;
 @property (weak, nonatomic) IBOutlet UILabel *lblLeftScore;
 
+
 @property int batSize;
 @property int initialBallSpeed;
 @property bool soundOn;

@@ -323,7 +323,6 @@ int ballSpeed;
     {
         rightMove = 0;
     }
-    
 }
 
 -(void)pressRightUp:(UILongPressGestureRecognizer *)gestureRecognizer
@@ -337,7 +336,6 @@ int ballSpeed;
 
         rightMove = 0;
     }
-    
 }
 
 -(void)pressLeftDown:(UILongPressGestureRecognizer *)gestureRecognizer
