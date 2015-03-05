@@ -18,6 +18,10 @@
 - (IBAction)switchSound:(id)sender;
 - (IBAction)speedSlide:(id)sender;
 - (IBAction)batSlide:(id)sender;
+@property (weak, nonatomic) IBOutlet UILabel *lblBat;
+@property (weak, nonatomic) IBOutlet UILabel *lblSpeed;
+@property (weak, nonatomic) IBOutlet UILabel *lblSound;
+
 
 @end
 

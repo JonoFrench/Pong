@@ -129,7 +129,9 @@ int ballSpeed;
     {
         [self.beep play];
     }
-    
+
+    [self.lblRightScore setText:[NSString stringWithFormat:@"%02d",rightScore]];
+    [self.lblLeftScore setText:[NSString stringWithFormat:@"%02d",leftScore]];
     [self.moveTimer fire];
     
 }
@@ -170,9 +172,11 @@ int ballSpeed;
             return;
         }
     }
-    //check for hitting right wall
+    //check for hitting bottom wall
     if (ballRect.origin.y >= (self.view.frame.size.height - ballSize))
     {
+        ballRect.origin.y = self.view.frame.size.height - ballSize;
+        NSLog(@"bottom wall");
         if (ballSpeed > _initialBallSpeed) {
             ballSpeed--;
         }
@@ -183,10 +187,18 @@ int ballSpeed;
         }
         leftScore++;
         [self.lblLeftScore setText:[NSString stringWithFormat:@"%02d",leftScore]];
+        if (leftScore==21) {
+            [self.moveTimer invalidate];
+            [self.ball removeFromSuperview];
+            [self gameOver];
+        }
+        
     }
-    //check for hitting left wall
+    //check for hitting top wall
     else if (ballRect.origin.y <= self.view.frame.origin.y)
     {
+        ballRect.origin.y = self.view.frame.origin.y;
+        NSLog(@"top wall");
         if (ballSpeed > _initialBallSpeed) {
             ballSpeed--;
         }
@@ -197,19 +209,31 @@ int ballSpeed;
         }
         rightScore++;
         [self.lblRightScore setText:[NSString stringWithFormat:@"%02d",rightScore]];
+        
+        if (rightScore==21) {
+            [self.moveTimer invalidate];
+            [self.ball removeFromSuperview];
+            [self gameOver];
+        }
+        
     }
-    //check for hitting tip wall
+    //check for hitting left wall
     else if (ballRect.origin.x >= (self.view.frame.size.width-ballSize))
     {
+        NSLog(@"left wall");
+        ballRect.origin.x = self.view.frame.size.width- ballSize;
         xSpeed = -ballSpeed;
         if(self.soundOn)
         {
             [self.beep play];
         }
     }
-    //check for hitting bottom wall
+    //check for hitting right wall
     else if (ballRect.origin.x <= self.view.frame.origin.x)
     {
+        NSLog(@"right wall");
+
+        ballRect.origin.x = self.view.frame.origin.x;
         xSpeed = ballSpeed;
         if(self.soundOn)
         {
@@ -274,7 +298,7 @@ int ballSpeed;
     int bat = ballpos-batpos;
     if (bat < batHeight/3)
     {
-        dir= ballSpeed;
+        dir= -ballSpeed;
     }
     else if ((bat > batHeight/3) && bat<= (batHeight/3*2))
     {
@@ -282,7 +306,7 @@ int ballSpeed;
     }
     else
     {
-        dir=-ballSpeed;
+        dir= ballSpeed;
     }
     
     return dir;
@@ -346,6 +370,37 @@ int ballSpeed;
 -(BOOL)prefersStatusBarHidden
 {
     return YES;
+}
+
+-(void)gameOver
+{
+    NSString *res;
+    if (rightScore == 21) {
+        res=@"Player 1 Won!";
+    }
+    else
+    {
+        res = @"Player 2 Won!";
+    }
+    
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Game Over"
+                                                    message:res
+                                                   delegate:self
+                                          cancelButtonTitle:@"OK"
+                                          otherButtonTitles:nil];
+    [alert show];
+}
+
+- (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex {
+
+    if (buttonIndex == 0) {
+        [self returnToMenu];
+    }
+}
+
+-(void)returnToMenu
+{
+     [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)didReceiveMemoryWarning
