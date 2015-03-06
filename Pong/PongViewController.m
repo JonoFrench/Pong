@@ -145,8 +145,9 @@ int ballSpeed;
     //check for hitting right bat
     if(ySpeed ==ballSpeed)
     {
-        if (ballRect.origin.x > (self.rightBat.frame.origin.x-ballSize) && ballRect.origin.x <= (self.rightBat.frame.origin.x+batHeight+ballSize) && ballRect.origin.y >= (self.rightBat.frame.origin.y-ballSize))
+        if (ballRect.origin.x > (self.rightBat.frame.origin.x-ballSize) && ballRect.origin.x <= (self.rightBat.frame.origin.x+batHeight-ballSize) && ballRect.origin.y >= (self.rightBat.frame.origin.y))
         {
+            ballRect.origin.y = self.rightBat.frame.origin.y-ballSize;
             ballSpeed++;
             ySpeed = -ballSpeed;
             xSpeed = [self ballDirection:ballRect.origin.x batPos:self.rightBat.frame.origin.x-ballSize];
@@ -160,8 +161,9 @@ int ballSpeed;
     //check for hitting left bat
     else if(ySpeed ==-ballSpeed)
     {
-        if (ballRect.origin.x > (self.leftBat.frame.origin.x-ballSize) && ballRect.origin.x <= (self.leftBat.frame.origin.x+batHeight+ballSize) && ballRect.origin.y <= (self.leftBat.frame.origin.y+ballSize))
+        if (ballRect.origin.x > (self.leftBat.frame.origin.x-ballSize) && ballRect.origin.x <= (self.leftBat.frame.origin.x+batHeight-ballSize) && ballRect.origin.y <= (self.leftBat.frame.origin.y))
         {
+             ballRect.origin.y = self.leftBat.frame.origin.y+ballSize;
             ballSpeed++;
             ySpeed = ballSpeed;
             xSpeed = [self ballDirection:ballRect.origin.x batPos:self.leftBat.frame.origin.x-ballSize];
