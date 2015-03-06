@@ -33,7 +33,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Pong" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bnN-Gc-CgJ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pong" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bnN-Gc-CgJ">
                                 <rect key="frame" x="268" y="37" width="65" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="65" id="4Pg-ke-xMG"/>
@@ -46,7 +46,7 @@
                                     <rect key="frame" x="168" y="37" width="65" height="34"/>
                                 </variation>
                             </label>
-                            <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="100" minValue="80" maxValue="120" translatesAutoresizingMaskIntoConstraints="NO" id="oA0-u6-nOY">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="100" minValue="80" maxValue="120" translatesAutoresizingMaskIntoConstraints="NO" id="oA0-u6-nOY">
                                 <rect key="frame" x="241" y="114" width="118" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="JEu-9U-z4t"/>
@@ -59,7 +59,7 @@
                                     <action selector="batSlide:" destination="BYZ-38-t0r" eventType="valueChanged" id="BIf-fq-iHT"/>
                                 </connections>
                             </slider>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Medium Bat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qOM-Ee-iL2">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Medium Bat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qOM-Ee-iL2">
                                 <rect key="frame" x="243" y="149" width="114" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="114" id="Wg6-mi-8bj"/>
@@ -72,7 +72,7 @@
                                     <rect key="frame" x="143" y="149" width="114" height="21"/>
                                 </variation>
                             </label>
-                            <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minValue="5" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="Vr5-yD-Q0E">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minValue="5" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="Vr5-yD-Q0E">
                                 <rect key="frame" x="241" y="178" width="118" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="6ec-Pi-lIp"/>
@@ -85,7 +85,7 @@
                                     <action selector="speedSlide:" destination="BYZ-38-t0r" eventType="valueChanged" id="4eQ-oJ-reJ"/>
                                 </connections>
                             </slider>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Speed 5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XXZ-SX-1KL">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Speed 5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XXZ-SX-1KL">
                                 <rect key="frame" x="243" y="213" width="114" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="Uds-CI-sMV"/>
@@ -98,7 +98,7 @@
                                     <rect key="frame" x="143" y="213" width="114" height="21"/>
                                 </variation>
                             </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m07-AS-Qol">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m07-AS-Qol">
                                 <rect key="frame" x="276" y="243" width="51" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="49" id="Elr-22-1TD"/>
@@ -111,7 +111,7 @@
                                     <action selector="switchSound:" destination="BYZ-38-t0r" eventType="valueChanged" id="yrx-cK-b3u"/>
                                 </connections>
                             </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Sound On" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K5P-h2-oSK">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sound On" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K5P-h2-oSK">
                                 <rect key="frame" x="243" y="282" width="114" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="4bH-xq-XPS"/>
@@ -124,7 +124,7 @@
                                     <rect key="frame" x="143" y="282" width="114" height="21"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="2 players, winner is the first to 21." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5NS-0X-gs9">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2 players, winner is the first to 21." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5NS-0X-gs9">
                                 <rect key="frame" x="158" y="394" width="285" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="285" id="FRT-A2-p9q"/>
@@ -137,7 +137,7 @@
                                     <rect key="frame" x="58" y="394" width="285" height="35"/>
                                 </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pot-zB-Iia">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pot-zB-Iia">
                                 <rect key="frame" x="249" y="330" width="102" height="56"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="102" id="9Jv-Jy-cvH"/>
@@ -164,16 +164,19 @@
                             <constraint firstItem="oA0-u6-nOY" firstAttribute="top" relation="lessThanOrEqual" secondItem="bnN-Gc-CgJ" secondAttribute="bottom" constant="43" id="IBi-rY-nF6"/>
                             <constraint firstItem="m07-AS-Qol" firstAttribute="top" secondItem="XXZ-SX-1KL" secondAttribute="bottom" constant="9" id="JjF-OT-uxa"/>
                             <constraint firstAttribute="centerX" secondItem="5NS-0X-gs9" secondAttribute="centerX" id="NYL-Fe-Rn1"/>
+                            <constraint firstItem="oA0-u6-nOY" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="114" id="Ovx-rl-4VL"/>
                             <constraint firstAttribute="centerX" secondItem="qOM-Ee-iL2" secondAttribute="centerX" id="VoJ-RP-p88"/>
                             <constraint firstItem="Vr5-yD-Q0E" firstAttribute="top" secondItem="qOM-Ee-iL2" secondAttribute="bottom" constant="8" id="WKA-HV-xUi"/>
                             <constraint firstAttribute="centerX" secondItem="XXZ-SX-1KL" secondAttribute="centerX" id="Wy0-xM-E0I"/>
                             <constraint firstItem="5NS-0X-gs9" firstAttribute="top" secondItem="Pot-zB-Iia" secondAttribute="bottom" constant="8" id="XFK-Yy-QcX"/>
                             <constraint firstAttribute="centerX" secondItem="Vr5-yD-Q0E" secondAttribute="centerX" id="Yga-JE-2my"/>
-                            <constraint firstItem="bnN-Gc-CgJ" firstAttribute="top" relation="lessThanOrEqual" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="17" id="ZrX-Pg-BiB"/>
+                            <constraint firstItem="bnN-Gc-CgJ" firstAttribute="top" relation="greaterThanOrEqual" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="17" id="ZrX-Pg-BiB"/>
                             <constraint firstItem="qOM-Ee-iL2" firstAttribute="top" secondItem="oA0-u6-nOY" secondAttribute="bottom" constant="5" id="g0E-nZ-eFF"/>
                             <constraint firstAttribute="centerX" secondItem="m07-AS-Qol" secondAttribute="centerX" id="geJ-uQ-kBh"/>
+                            <constraint firstItem="oA0-u6-nOY" firstAttribute="top" secondItem="bnN-Gc-CgJ" secondAttribute="bottom" constant="43" id="gx7-xm-7XV"/>
                             <constraint firstAttribute="centerX" secondItem="Pot-zB-Iia" secondAttribute="centerX" id="h4E-K5-dpd"/>
                             <constraint firstAttribute="centerY" secondItem="Pot-zB-Iia" secondAttribute="centerY" constant="-58" id="hnt-mh-t4q"/>
+                            <constraint firstItem="Pot-zB-Iia" firstAttribute="top" secondItem="K5P-h2-oSK" secondAttribute="bottom" constant="27" id="wD0-vF-k4h"/>
                             <constraint firstItem="K5P-h2-oSK" firstAttribute="top" secondItem="m07-AS-Qol" secondAttribute="bottom" constant="8" id="z3V-Gc-W9w"/>
                             <constraint firstAttribute="centerX" secondItem="bnN-Gc-CgJ" secondAttribute="centerX" id="zfL-0g-84G"/>
                         </constraints>
@@ -221,7 +224,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="5" id="08R-7f-FNy"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="600" id="FK0-oq-EBU"/>
-                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="600" id="GwT-HG-YT5"/>
+                                    <constraint firstAttribute="height" constant="600" placeholder="YES" id="GwT-HG-YT5"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -230,7 +233,7 @@
                                 </variation>
                                 <variation key="heightClass=regular">
                                     <mask key="constraints">
-                                        <include reference="FK0-oq-EBU"/>
+                                        <exclude reference="FK0-oq-EBU"/>
                                         <include reference="GwT-HG-YT5"/>
                                     </mask>
                                 </variation>
@@ -246,7 +249,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="600" id="Sbi-1Q-h3d"/>
-                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="600" id="aH2-Nq-Mf0"/>
+                                    <constraint firstAttribute="height" constant="600" placeholder="YES" id="aH2-Nq-Mf0"/>
                                     <constraint firstAttribute="width" constant="5" id="fdA-ij-Qsk"/>
                                 </constraints>
                                 <variation key="default">
@@ -256,7 +259,7 @@
                                 </variation>
                                 <variation key="heightClass=regular">
                                     <mask key="constraints">
-                                        <include reference="Sbi-1Q-h3d"/>
+                                        <exclude reference="Sbi-1Q-h3d"/>
                                         <include reference="aH2-Nq-Mf0"/>
                                     </mask>
                                 </variation>
@@ -271,7 +274,7 @@
                                 <rect key="frame" x="5" y="595" width="590" height="5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="590" id="1rL-qm-5r5"/>
+                                    <constraint firstAttribute="width" constant="590" placeholder="YES" id="1rL-qm-5r5"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="590" id="4ZG-ga-nz1"/>
                                     <constraint firstAttribute="height" constant="5" id="tRO-Qw-FL7"/>
                                 </constraints>
@@ -283,7 +286,7 @@
                                 <variation key="heightClass=regular">
                                     <mask key="constraints">
                                         <include reference="1rL-qm-5r5"/>
-                                        <include reference="4ZG-ga-nz1"/>
+                                        <exclude reference="4ZG-ga-nz1"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact">
@@ -298,7 +301,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="5" id="5PJ-6w-gD2"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="590" id="7B6-t3-Z3o"/>
-                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="590" id="cbM-iS-Eht"/>
+                                    <constraint firstAttribute="width" constant="590" placeholder="YES" id="cbM-iS-Eht"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -307,7 +310,7 @@
                                 </variation>
                                 <variation key="heightClass=regular">
                                     <mask key="constraints">
-                                        <include reference="7B6-t3-Z3o"/>
+                                        <exclude reference="7B6-t3-Z3o"/>
                                         <include reference="cbM-iS-Eht"/>
                                     </mask>
                                 </variation>
@@ -321,7 +324,7 @@
                                 <rect key="frame" x="5" y="298" width="590" height="5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="590" id="Kaq-bU-VMF"/>
+                                    <constraint firstAttribute="width" constant="590" placeholder="YES" id="Kaq-bU-VMF"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="590" id="NW6-6a-gNw"/>
                                     <constraint firstAttribute="height" constant="5" id="XU2-e3-UsM"/>
                                 </constraints>
@@ -333,7 +336,7 @@
                                 <variation key="heightClass=regular">
                                     <mask key="constraints">
                                         <include reference="Kaq-bU-VMF"/>
-                                        <include reference="NW6-6a-gNw"/>
+                                        <exclude reference="NW6-6a-gNw"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact">
