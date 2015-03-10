@@ -159,8 +159,6 @@ int ballSpeed;
             {
                 [self.beep play];
             }
-            
-            //return;
         }
     }
     //check for hitting left bat
@@ -176,8 +174,6 @@ int ballSpeed;
             {
                 [self.beep play];
             }
-            
-            //return;
         }
     }
     //check for hitting bottom wall
