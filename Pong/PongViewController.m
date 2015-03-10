@@ -159,6 +159,7 @@ int ballSpeed;
             {
                 [self.beep play];
             }
+            
             //return;
         }
     }
@@ -175,6 +176,7 @@ int ballSpeed;
             {
                 [self.beep play];
             }
+            
             //return;
         }
     }
