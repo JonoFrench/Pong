@@ -14,6 +14,8 @@
 
 @end
 
+#pragma mark Instance variables
+
 int xPos;
 int yPos;
 int xSpeed;
@@ -32,6 +34,8 @@ int ballSpeed;
 
 @implementation PongViewController
 
+
+#pragma mark viewDidLoad
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -60,14 +64,12 @@ int ballSpeed;
     
     
     //set up the right bat (bottom)
-//    self.rightBat = [[UIView alloc]initWithFrame:CGRectMake(self.view.frame.size.height-(batHeight/2), (self.view.frame.size.width/2)-(batHeight/2), 10, batHeight)];
     self.rightBat = [[UIView alloc]initWithFrame:CGRectMake( (self.view.frame.size.width/2)-(batHeight/2),self.view.frame.size.height-(30), batHeight, 10)];
     [self.rightBat setUserInteractionEnabled:NO];
     [self.rightBat setBackgroundColor:[UIColor whiteColor]];
     [self.view addSubview:self.rightBat];
 
     //set up the left bat (top)
-   // self.leftBat = [[UIView alloc]initWithFrame:CGRectMake(20, (self.view.frame.size.width/2)-(batHeight/2), 10, batHeight)];
     self.leftBat = [[UIView alloc]initWithFrame:CGRectMake((self.view.frame.size.width/2)-(batHeight/2),20, batHeight,10)];
     [self.leftBat setUserInteractionEnabled:NO];
     [self.leftBat setBackgroundColor:[UIColor whiteColor]];
@@ -136,6 +138,8 @@ int ballSpeed;
     
 }
 
+#pragma mark movement and controls
+
 -(void)moveBall
 {
     CGRect ballRect  = self.ball.frame;
@@ -155,7 +159,7 @@ int ballSpeed;
             {
                 [self.beep play];
             }
-            return;
+            //return;
         }
     }
     //check for hitting left bat
@@ -171,7 +175,7 @@ int ballSpeed;
             {
                 [self.beep play];
             }
-            return;
+            //return;
         }
     }
     //check for hitting bottom wall
@@ -364,6 +368,8 @@ int ballSpeed;
 {
     return YES;
 }
+
+#pragma mark end game
 
 -(void)gameOver
 {
